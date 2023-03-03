@@ -1,32 +1,44 @@
->> This is a sample project template for inspiration 
 # Octernship Information
 <img src="https://user-images.githubusercontent.com/53075480/213182217-c8ef7bd5-9ffe-4201-9763-c157206a5910.png" width="100">
 
 ### Company information 
-<!--- Use this section to share information about your company such as founding information, mission statement, product description, product success, etc.--->
-GitHub is the developer company. We make it easier for developers to be developers: to work together, to solve challenging problems, and to create the world’s most important technologies. We foster a collaborative community that can come together—as individuals and in teams—to create the future of software and make a difference in the world.
+SecureStack is a startup based on the Gold Coast in Australia.  We offer a SaaS-based platform that helps software engineering teams easily embed security into their cloud-native applications and software development lifecycle (SDLC). We do this in a really unique and innovative way:  We analyze their source code and cloud resources while continuously scanning web assets at the same time. We use the data that is generated to build context around how the application works, and what it's talking to, and is it secure?  We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
 
-### Why participate in an Octernship with GitHub
-<!--- Use this section to appeal to students. Consider sharing information about recent projects, the technology stack, the type of mentorship students can expect, listing future employment opportunities, etc. --->
-GitHub is changing the way the world builds software, and we want you to help build GitHub!
-Our team actively contributes back to the wider open source community, including the Node.js Project, OpenJS Foundation, Open Source Security Foundation & TC39.
-In this role, you will have the opportunity to work as a full-stack engineer with a distributed, diverse & passionate team delivering features & improvements to our open source projects. You’ll get to work closely with external community contributors as well as internal stakeholders from engineering, design, security, support, product & leadership. Your work will have a direct impact on the lives of millions of developers around the world.
+### Why participate in an Octernship with SecureStack
+SecureStack is a startup based in Australia. Our team has built a SaaS platform that helps software engineering teams easily embed security into their software development lifecycle (SDLC). We do this by analyzing their source code, cloud resources and web assets and use that data to build context around how the application works, and what it's talking to. We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
+
+Because we combine data and insights from source code, cloud stack and web app analysis, we understand our customer's applications better than any other platform can. This allows us to prioritize vulnerabilities intelligently and build very focused/automated mitigations for our customers.
+
+In this intern role, you will be working with a highly performant team who are all based in Australia.  It's okay if you aren't in Australia, we are open to interns that are located pretty much anywhere.  You will have the opportunity to work on several different projects spread across our platform. There will be opportunities to work on frontend components as well as some of our backend systems as well.  Our platform is built in AWS and takes advantage of AWS ECS, Fargate, Lambda, and some Ec2 as well, so if you want to learn about AWS while building you can do that too! 
 
 ### Octernship role description
 <!--- Use this section to describe the role in as much detail as necessary. Please include the GitHub Classroom assignment submission date, length of the Octernship, and the monthly stipend --->
 We're looking for a full-stack developer to join the npm CLI team. This team is responsible for the open source tools that empower the JavaScript ecosystem to create, distribute & consume packages.
+SecureStack is looking for a passionate intern who wants to learn about application security and DevSecOps while help build a truly innovative product.  The important part of this is that the successful intern will have a passion for learning and some experience in one or more of these things:
+1. Javascript & React
+2. Frontend design
+3. Tailwind CSS
+4. Python & FastAPI
+5. GraphQL & Apollo
+6. Golang
+7. API design
+8. AWS
+
+Don't think you need experience in all of those things, because you don't!  We are looking for someone that has experience in at least one of those technologies and is excited about working on a genuinely innovative application security product.  
+
 
 | Octernship info  | Timelines and Stipend |
 | ------------- | ------------- |
 | Assignment Deadline  | 26 March 2023  |
 | Octernship Duration  | 3 Months  |
-| Monthly Stipend  | $700 USD  |
+| Monthly Stipend  | $500 USD  |
 
 ### Recommended qualifications
 <!--- Use this section to describe what skills a student might need to complete the problem statement on GitHub Classroom --->
 - Experience with Git & GitHub
 - Writing modern JavaScript/Node.js
-- Passion for open source & web standards
+- Passion for application security
+- Some experience in AWS
 
 ### Eligibility
 To participate, you must be:
@@ -35,35 +47,17 @@ To participate, you must be:
 * Active contributor on GitHub (monthly)
 
 # Assignment
-## Recursive rm in npm CLI
+## Build a purposedly vulnerable web app.
 
 ### Task instructions
 <!--- Use this section to describe the task that students are required to complete. We ask that you also include instructions on running and preparing the students' local environment if necessary. --->
-Use recursive rm in cli command and add test case. Currently npm ci fails with ERR_FS_EISDIR for node_modules/.bin
+Your task, if you choose to take it, is to build a web application and embed at least one security flaw in that application.  We don't care how complex the app is, so feel free to build a Javascript SPA app, but make sure that there is at least one security issue in it.
+
+As an example of a simple Javascript SPA you can check out our [ vulnerable NiftyBank App](https://app.niftybank.org)
 
 #### Steps To Reproduce
 - Fork this repository
 - Install npm
-
-Use this package.json for testing
-
-```
-{
-  "name": "npm-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "eslint": "^8.31.0"
-  }
-}
-```
-
 
 
 ### Task Expectations
