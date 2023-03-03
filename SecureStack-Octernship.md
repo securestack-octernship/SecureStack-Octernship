@@ -2,10 +2,11 @@
 <img src="https://user-images.githubusercontent.com/53075480/213182217-c8ef7bd5-9ffe-4201-9763-c157206a5910.png" width="100">
 
 ### Company information 
+<a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="400"/></center></a>
 SecureStack is a startup based on the Gold Coast in Australia.  We offer a SaaS-based platform that helps software engineering teams easily embed security into their cloud-native applications and software development lifecycle (SDLC). We do this in a really unique and innovative way:  We analyze their source code and cloud resources while continuously scanning web assets at the same time. We use the data that is generated to build context around how the application works, and what it's talking to, and is it secure?  We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
 
 ### Why participate in an Octernship with SecureStack
-SecureStack is a startup based in Australia. Our team has built a SaaS platform that helps software engineering teams easily embed security into their software development lifecycle (SDLC). We do this by analyzing their source code, cloud resources and web assets and use that data to build context around how the application works, and what it's talking to. We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
+SecureStack is a startup based on the Gold Coast, in Australia.  Our vision is to help software engineers build and deploy more secure applications. We've built a SaaS platform that helps software engineering teams easily embed security into their software development lifecycle (SDLC). We do this by analyzing their source code, cloud resources and web assets and use that data to build context around how the application works, and what it's talking to. We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
 
 Because we combine data and insights from source code, cloud stack and web app analysis, we understand our customer's applications better than any other platform can. This allows us to prioritize vulnerabilities intelligently and build very focused/automated mitigations for our customers.
 
@@ -51,20 +52,14 @@ To participate, you must be:
 
 ### Task instructions
 <!--- Use this section to describe the task that students are required to complete. We ask that you also include instructions on running and preparing the students' local environment if necessary. --->
-Your task, if you choose to take it, is to build a web application and embed at least one security flaw in that application.  We don't care how complex the app is, so feel free to build a Javascript SPA app, but make sure that there is at least one security issue in it.
+Your task, if you choose to accept it, is to build a web application and purposedly embed at least one security flaw in that application.  We don't care how complex the app is, so feel free to build a Javascript SPA app, but make sure that there is at least one security issue in it.
 
-As an example of a simple Javascript SPA you can check out our [ vulnerable NiftyBank App](https://app.niftybank.org)
-
-#### Steps To Reproduce
-- Fork this repository
-- Install npm
-
+As an example of a simple Javascript SPA you can check out our [vulnerable NiftyBank App](https://app.niftybank.org)
 
 ### Task Expectations
-<!--- Please add expectations that students need to follow to be considered. Some examples include: completing the task on their own, not using code from external resources without comprehending the logic, etc.  --->
-- The cli should delete node_modules without crashing
-- The task should be completed on your own
-- Using code from external sources must reference it's logic and source 
+- Take a look at one of our purposedly vulnerable web apps [here](https://app.niftybank.org)
+- Create your own web app
+- Commit your repo to our GitHub Classroom
 
 
 ### Task submission
@@ -77,6 +72,4 @@ Students are expected to use the [GitHub Flow](https://docs.github.com/en/get-st
 
 ### Resources
 <!--- Use this section to add resources for students to refer to. For example: Documentation, Tutorials, Guides, and more.  --->
-- Install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- npm [documentation](https://docs.npmjs.com/)
-- Sample [Issue](https://github.com/npm/cli/issues/6051)
+- Check out our vulnerable web app: [app.niftybank.org](https://app.niftybank.org)
