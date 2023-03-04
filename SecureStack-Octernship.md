@@ -1,8 +1,8 @@
 # Octernship Information
 <img src="https://user-images.githubusercontent.com/53075480/213182217-c8ef7bd5-9ffe-4201-9763-c157206a5910.png" width="100">
 
-### Company information 
 <a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="400"/></center></a>
+### Company information 
 SecureStack is a startup based on the Gold Coast in Australia.  We offer a SaaS-based platform that helps software engineering teams easily embed security into their cloud-native applications and software development lifecycle (SDLC). We do this in a really unique and innovative way:  We analyze their source code and cloud resources while continuously scanning web assets at the same time. We use the data that is generated to build context around how the application works, and what it's talking to, and is it secure?  We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
 
 ### Why participate in an Octernship with SecureStack
@@ -52,14 +52,12 @@ To participate, you must be:
 
 ### Task instructions
 <!--- Use this section to describe the task that students are required to complete. We ask that you also include instructions on running and preparing the students' local environment if necessary. --->
-Your task, if you choose to accept it, is to build a web application and purposedly embed at least one security flaw in that application.  We don't care how complex the app is, so feel free to build a Javascript SPA app, but make sure that there is at least one security issue in it.
-
-As an example of a simple Javascript SPA you can check out our [vulnerable NiftyBank App](https://app.niftybank.org)
+Your task, if you choose to accept it, is to contribute to our web application and purposedly embed at least one security flaw in that application.  That web app can be built using any language and or technology.  It doesn't have to be complex, so create something simple.  For example, it can be a Javascript SPA app and like the example application we made:  [Our vulnerable NiftyBank App](https://app.niftybank.org)
 
 ### Task Expectations
-- Take a look at one of our purposedly vulnerable web apps [here](https://app.niftybank.org)
-- Create your own web app
-- Commit your repo to our GitHub Classroom
+- Make 
+- Share that simple web app with us by commiting your repo to our GitHub Classroom
+- If you want to go one 
 
 
 ### Task submission
