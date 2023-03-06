@@ -48,26 +48,29 @@ To participate, you must be:
 * Active contributor on GitHub (monthly)
 
 # Assignment
-## Build a purposedly vulnerable web app.
+## Find issues in our vulnerable web app.
 
 ### Task instructions
-<!--- Use this section to describe the task that students are required to complete. We ask that you also include instructions on running and preparing the students' local environment if necessary. --->
-Your task, if you choose to accept it, is to contribute to our web application and purposedly embed at least one security flaw in that application.  That web app can be built using any language and or technology.  It doesn't have to be complex, so create something simple.  For example, it can be a Javascript SPA app and like the example application we made:  [Our vulnerable NiftyBank App](https://app.niftybank.org)
+SecureStack built a single page Javascript app.  This app was built to be able to demo different types of web application vulnerabilities.  Your task, if you choose to accept it, is to analyze our vulnerable web application and find at least one vulnerability or misconfiguration in that app.  The web URL is https://app.cheapcryptobank.com and the source code can be found at our vulnerable [CheapCryptoBank web app](https://app.cheapcryptobank.com). You can find the source code here: https://github.com/SecureStackCo/SecureStack-Octernship/app.cheapcryptobank.com.git
+
+This is totally optional and is not required for this assignment, but if you want to, you can use the SecureStack platform to many of the vulnerabilities in the CheapCryptoBank app.  If you want to, you can create a free [SecureStack account](https://app.securestack.com/auth/register). This account doesn't ask for your real name or a credit card.  You can login with your GitHub credentials.  Once you've created an account you can use SecureStack to scan the web URL and source code automatically.  
+
+We want this assignment to be fun, so feel free to use any tool you want to scan our web applicaiton and/or the source code for this app.  You can use SecureStack or you can use another tool.  Or, you can just inspect the source code and running web app yourself, no tools necessary!
 
 ### Task Expectations
-- Make 
-- Share that simple web app with us by commiting your repo to our GitHub Classroom
-- If you want to go one 
-
+- Analyze the CheapCryptoBank application
+- Share what security vulnerabilities you found by commiting your repo with comments to our GitHub Classroom
 
 ### Task submission
 
 Students are expected to use the [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) when working on their task. This includes
 
 1. Creating a new branch
-2. Making changes on the new branch to complete the task
+2. In that branch define in plain text what vulnerability you found
+3. If you found a security vulnerability that can be corrected in code, feel free to include a code based solution.  This is for extra points!
 3. Opening a Pull Request for review
 
 ### Resources
 <!--- Use this section to add resources for students to refer to. For example: Documentation, Tutorials, Guides, and more.  --->
-- Check out our vulnerable web app: [app.niftybank.org](https://app.niftybank.org)
+- Check out our vulnerable web app: [app.cheapcryptobank.com](https://app.cheapcryptobank.com)
+- Use the [SecureStack platform](https://app.securestack.com/auth/register) to analyze the application
