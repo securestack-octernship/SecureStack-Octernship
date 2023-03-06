@@ -6,9 +6,7 @@
 SecureStack is a startup based on the Gold Coast in Australia.  We offer a SaaS-based platform that helps software engineering teams easily embed security into their cloud-native applications and software development lifecycle (SDLC). We do this in a really unique and innovative way:  We analyze their source code and cloud resources while continuously scanning web assets at the same time. We use the data that is generated to build context around how the application works, and what it's talking to, and is it secure?  We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
 
 ### Why participate in an Octernship with SecureStack
-SecureStack is a startup based on the Gold Coast, in Australia.  Our vision is to help software engineers build and deploy more secure applications. We've built a SaaS platform that helps software engineering teams easily embed security into their software development lifecycle (SDLC). We do this by analyzing their source code, cloud resources and web assets and use that data to build context around how the application works, and what it's talking to. We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
-
-Because we combine data and insights from source code, cloud stack and web app analysis, we understand our customer's applications better than any other platform can. This allows us to prioritize vulnerabilities intelligently and build very focused/automated mitigations for our customers.
+Because SecureStack combines and analyzes data from source code, cloud stack and web app analysis, we understand our customer's applications better than any other platform can. We use this data to build insights about the customers application environments.  This allows us to prioritize vulnerabilities intelligently and build very focused/automated mitigations for our customers.
 
 In this intern role, you will be working with a highly performant team who are all based in Australia.  It's okay if you aren't in Australia, we are open to interns that are located pretty much anywhere.  You will have the opportunity to work on several different projects spread across our platform. There will be opportunities to work on frontend components as well as some of our backend systems as well.  Our platform is built in AWS and takes advantage of AWS ECS, Fargate, Lambda, and some Ec2 as well, so if you want to learn about AWS while building you can do that too! 
 
@@ -36,6 +34,7 @@ Don't think you need experience in all of those things, because you don't!  We a
 
 ### Recommended qualifications
 <!--- Use this section to describe what skills a student might need to complete the problem statement on GitHub Classroom --->
+- Passion to learn is the most important qualification!
 - Experience with Git & GitHub
 - Writing modern JavaScript/Node.js
 - Passion for application security
