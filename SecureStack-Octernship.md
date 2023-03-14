@@ -28,7 +28,7 @@ Don't think you need experience in all of those things, because you don't!  We a
 
 | Octernship info  | Timelines and Stipend |
 | ------------- | ------------- |
-| Assignment Deadline  | 2 April 2023  |
+| Assignment Deadline  | 26 March 2023  |
 | Octernship Duration  | 3 Months  |
 | Monthly Stipend  | $500 USD  |
 
@@ -64,10 +64,10 @@ We want this assignment to be fun, so feel free to use any tool you want to scan
 
 Students are expected to use the [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) when working on their task. This includes
 
-1. Creating a new branch.
+1. Making changes on the auto generated `feedback` branch to complete the task
 2. In that branch define in plain text what vulnerability you found
 3. If you found a security vulnerability that can be corrected in code, feel free to include a code based solution.  This is for extra points!
-4. Create a new Pull Request for review and submission
+4. Using the auto generated **Feedback Pull Request** for review and submission
 5. Using GitHub Discussions to ask any relevant questions regarding the project
 
 ### Resources
