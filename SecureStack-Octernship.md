@@ -64,11 +64,10 @@ We want this assignment to be fun, so feel free to use any tool you want to scan
 
 Students are expected to use the [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) when working on their task. This includes
 
-1. Making changes on the auto generated `feedback` branch to complete the task
+1. Creating a new branch
 2. In that branch define in plain text what vulnerability you found
 3. If you found a security vulnerability that can be corrected in code, feel free to include a code based solution.  This is for extra points!
-4. Using the auto generated **Feedback Pull Request** for review and submission
-5. Using GitHub Discussions to ask any relevant questions regarding the project
+3. Opening a Pull Request for review
 
 ### Resources
 <!--- Use this section to add resources for students to refer to. For example: Documentation, Tutorials, Guides, and more.  --->
