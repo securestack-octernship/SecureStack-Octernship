@@ -28,7 +28,7 @@ Don't think you need experience in all of those things, because you don't!  We a
 
 | Octernship info  | Timelines and Stipend |
 | ------------- | ------------- |
-| Assignment Deadline  | 26 March 2023  |
+| Assignment Deadline  | 2 April 2023  |
 | Octernship Duration  | 3 Months  |
 | Monthly Stipend  | $500 USD  |
 
