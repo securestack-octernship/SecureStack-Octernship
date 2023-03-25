@@ -57,3 +57,24 @@ For example, to enable HSTS in Apache, you can add the following lines to your `
 Replace `<expire-time>` with the number of seconds that you want the browser to remember that the site is only accessible via HTTPS.
 
 Enabling HSTS can help to improve the security of your project by preventing man-in-the-middle attacks and other security vulnerabilities.
+
+
+
+### 2. Use of Hardcoded Credentials
+
+Hardcoding credentials in your code can create a security vulnerability because it can be easily accessed by anyone who has access to the project's code.
+
+in `src\App.js` : `6:7`
+
+``` const password="v6faF+gC7Zs@?VyCqtEYQ%?S" ``` 
+
+   
+**Solution:**
+
+To address this issue, it is recommended to store the credentials in a secure location such as a configuration file, a database, or an environment variable. This would make it harder for attackers to access the credentials, as they would need to have access to the secure location in addition to the code.
+
+In this case, the hardcoded password in `src\App.js` can be moved to a configuration file or an environment variable. For example, you could create a `.env` file in the root of your project, and define the password as an environment variable:`PASSWORD=v6faF+gC7Zs@?VyCqtEYQ%?S`
+
+Then, in `src\App.js`, you can retrieve the password from the environment variable using `process.env.PASSWORD`:`const password = process.env.PASSWORD;`
+
+By using this approach, the password is not exposed in the code and is only accessible through a secure mechanism.
