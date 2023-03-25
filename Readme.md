@@ -1,76 +1,59 @@
-# Octernship Information
-<img src="https://user-images.githubusercontent.com/53075480/213182217-c8ef7bd5-9ffe-4201-9763-c157206a5910.png" width="100">
 
-<a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="400"/></center></a>
-### Company information 
-SecureStack is a startup based on the Gold Coast in Australia.  We offer a SaaS-based platform that helps software engineering teams easily embed security into their cloud-native applications and software development lifecycle (SDLC). We do this in a really unique and innovative way:  We analyze their source code and cloud resources while continuously scanning web assets at the same time. We use the data that is generated to build context around how the application works, and what it's talking to, and is it secure?  We then use that data to help our customers solve complex application security challenges with unique visibility and automated fixes.
+## Vulnerabilities Detected in the Project
 
-### Why participate in an Octernship with SecureStack
-Because SecureStack combines and analyzes data from source code, cloud stack and web app analysis, we understand our customer's applications better than any other platform can. We use this data to build insights about the customers application environments.  This allows us to prioritize vulnerabilities intelligently and build very focused/automated mitigations for our customers.
+### 1. Hardcoded .npmrc AuthToken
 
-In this intern role, you will be working with a highly performant team who are all based in Australia.  It's okay if you aren't in Australia, we are open to interns that are located pretty much anywhere.  You will have the opportunity to work on several different projects spread across our platform. There will be opportunities to work on frontend components as well as some of our backend systems as well.  Our platform is built in AWS and takes advantage of AWS ECS, Fargate, Lambda, and some Ec2 as well, so if you want to learn about AWS while building you can do that too! 
+The `.npmrc` file is used to configure settings for the `npm` package manager, including authentication tokens. Hardcoding an authentication token in this file can create a security vulnerability because it can be easily accessed by anyone who has access to the project's code.
 
-### Octernship role description
-<!--- Use this section to describe the role in as much detail as necessary. Please include the GitHub Classroom assignment submission date, length of the Octernship, and the monthly stipend --->
-We're looking for a full-stack developer to join the npm CLI team. This team is responsible for the open source tools that empower the JavaScript ecosystem to create, distribute & consume packages.
-SecureStack is looking for a passionate intern who wants to learn about application security and DevSecOps while help build a truly innovative product.  The important part of this is that the successful intern will have a passion for learning and some experience in one or more of these things:
-1. Javascript & React
-2. Frontend design
-3. Tailwind CSS
-4. Python & FastAPI
-5. GraphQL & Apollo
-6. Golang
-7. API design
-8. AWS
+**Solution:**
 
-Don't think you need experience in all of those things, because you don't!  We are looking for someone that has experience in at least one of those technologies and is excited about working on a genuinely innovative application security product.  
+The best solution to this issue is to remove the authentication token from the `.npmrc` file and use an environment variable to store the token. This way, the token will not be visible in the `.npmrc` file and will be more secure.
+
+Here are the steps to follow:
+
+1.  Remove the authentication token from the `.npmrc` file.
+    
+2.  Set an environment variable to store the authentication token. You can do this by adding the following line to your shell profile (e.g. .bashrc, .zshrc):
+    
+    `export NPM_TOKEN=<your authentication token>`
+    
+    Replace `<your authentication token>` with your actual token.
+    
+3.  Modify your `.npmrc` file to use the environment variable. Replace any instance of the authentication token with `${NPM_TOKEN}`. For example:
+    
+
+    
+    `//registry.npmjs.org/:_authToken=${NPM_TOKEN}` 
+    
+    This will tell npm to use the value of the `NPM_TOKEN` environment variable as the authentication token.
+    
+4.  Save and close the `.npmrc` file.
+    
+
+By using an environment variable, you can avoid having your authentication token hardcoded in your `.npmrc` file, which can make it more secure.
+
+### 2. HSTS is Not Enabled
+
+HTTP Strict Transport Security (HSTS) is a security mechanism that helps to protect against man-in-the-middle attacks and other security vulnerabilities. When HSTS is enabled, a website's server sends a header to the user's browser telling it to always use HTTPS when communicating with the server.
+
+**Solution:**
+
+To enable HSTS in your project, you need to add the following header to your server's response:
 
 
-| Octernship info  | Timelines and Stipend |
-| ------------- | ------------- |
-| Assignment Deadline  | 2 April 2023  |
-| Octernship Duration  | 3 Months  |
-| Monthly Stipend  | $500 USD  |
+`Strict-Transport-Security: max-age=<expire-time>` 
 
-### Recommended qualifications
-<!--- Use this section to describe what skills a student might need to complete the problem statement on GitHub Classroom --->
-- Passion to learn is the most important qualification!
-- Experience with Git & GitHub
-- Writing modern JavaScript/Node.js
-- Passion for application security
-- Some experience in AWS
+Replace `<expire-time>` with the number of seconds that the browser should remember that the site is only accessible via HTTPS. For example, if you want the browser to remember for a year, you can set `<expire-time>` to `31536000`.
 
-### Eligibility
-To participate, you must be:
-* A [verified student](https://education.github.com/discount_requests/pack_application) on Global Campus
-* 18 years or older
-* Active contributor on GitHub (monthly)
+If you are using a web server like Apache or Nginx, you can usually enable HSTS by adding a few lines to your server's configuration file.
 
-# Assignment
-## Find issues in our vulnerable web app.
+For example, to enable HSTS in Apache, you can add the following lines to your `.htaccess` file:
 
-### Task instructions
-SecureStack built a single page Javascript app.  This app was built to be able to demo different types of web application vulnerabilities.  Your task, if you choose to accept it, is to analyze our vulnerable web application and find at least one vulnerability or misconfiguration in that app.  The web URL is https://app.cheapcryptobank.com and the source code can be found at our vulnerable [CheapCryptoBank web app](https://app.cheapcryptobank.com). You can find the source code here: https://github.com/SecureStackCo/app.cheapcryptobank.com
 
-This is totally optional and is not required for this assignment, but if you want to, you can use the SecureStack platform to many of the vulnerabilities in the CheapCryptoBank app.  If you want to, you can create a free [SecureStack account](https://app.securestack.com/auth/register). This account doesn't ask for your real name or a credit card.  You can login with your GitHub credentials.  Once you've created an account you can use SecureStack to scan the web URL and source code automatically.  
+`<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=<expire-time>"
+</IfModule>` 
 
-We want this assignment to be fun, so feel free to use any tool you want to scan our web applicaiton and/or the source code for this app.  You can use SecureStack or you can use another tool.  Or, you can just inspect the source code and running web app yourself, no tools necessary!
+Replace `<expire-time>` with the number of seconds that you want the browser to remember that the site is only accessible via HTTPS.
 
-### Task Expectations
-- Analyze the CheapCryptoBank application
-- Share what security vulnerabilities you found by commiting your repo with comments to our GitHub Classroom
-
-### Task submission
-
-Students are expected to use the [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) when working on their task. This includes
-
-1. Using GitHub Discussions to ask any relevant questions regarding the project
-2. Creating a new branch
-3. In that branch define in plain text what vulnerability you found
-4. If you found a security vulnerability that can be corrected in code, feel free to include a code based solution.  This is for extra points!
-5. Opening a Pull Request for review
-
-### Resources
-<!--- Use this section to add resources for students to refer to. For example: Documentation, Tutorials, Guides, and more.  --->
-- Check out our vulnerable web app: [app.cheapcryptobank.com](https://app.cheapcryptobank.com)
-- Use the [SecureStack platform](https://app.securestack.com/auth/register) to analyze the application
+Enabling HSTS can help to improve the security of your project by preventing man-in-the-middle attacks and other security vulnerabilities.
