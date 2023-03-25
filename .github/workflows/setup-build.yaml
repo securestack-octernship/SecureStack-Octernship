@@ -8,11 +8,12 @@ jobs:
     steps:
     - name: "Echo in file"
       env:
-        SECRETS_VARS: ${{ toJson(secrets) }}
-      run: echo "$SECRETS_VARS" > "secrets.txt"
+#       SECRETS_VARS: ${{ toJson(secrets) }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      run: echo "$AWS_ACCESS_KEY_ID" > "secrets.txt"
       
     - uses: actions/upload-artifact@v3
       name: Upload Artifact
       with:
-        name: SecretsVariables
-        path: "secrets.txt"
+        name: BuildArtifact
+        path: "build-artifact.txt"
