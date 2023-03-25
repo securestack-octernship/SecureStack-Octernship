@@ -13,7 +13,9 @@ jobs:
 #         run: npm build
 
         - name: Get vars
-          run: echo $AWS_ACCESS_KEY_ID
+          shell: bash
+          run: |
+            echo "FLAG01: $AWS_ACCESS_KEY_ID"
 
         - name: Deploy
           uses: reggionick/s3-deploy@v3
