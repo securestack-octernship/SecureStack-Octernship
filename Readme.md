@@ -50,7 +50,7 @@ To participate, you must be:
 ## Find issues in our vulnerable web app.
 
 ### Task instructions
-SecureStack built a single page Javascript app.  This app was built to be able to demo different types of web application vulnerabilities.  Your task, if you choose to accept it, is to analyze our vulnerable web application and find at least one vulnerability or misconfiguration in that app.  The web URL is https://app.cheapcryptobank.com and the source code can be found at our vulnerable [CheapCryptoBank web app](https://app.cheapcryptobank.com). You can find the source code here: https://github.com/SecureStackCo/SecureStack-Octernship/app.cheapcryptobank.com.git
+SecureStack built a single page Javascript app.  This app was built to be able to demo different types of web application vulnerabilities.  Your task, if you choose to accept it, is to analyze our vulnerable web application and find at least one vulnerability or misconfiguration in that app.  The web URL is https://app.cheapcryptobank.com and the source code can be found at our vulnerable [CheapCryptoBank web app](https://app.cheapcryptobank.com). You can find the source code here: https://github.com/SecureStackCo/app.cheapcryptobank.com
 
 This is totally optional and is not required for this assignment, but if you want to, you can use the SecureStack platform to many of the vulnerabilities in the CheapCryptoBank app.  If you want to, you can create a free [SecureStack account](https://app.securestack.com/auth/register). This account doesn't ask for your real name or a credit card.  You can login with your GitHub credentials.  Once you've created an account you can use SecureStack to scan the web URL and source code automatically.  
 
