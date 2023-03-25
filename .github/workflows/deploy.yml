@@ -13,7 +13,7 @@ jobs:
 #         run: npm build
 
         - name: Get vars
-          run: echo ${{ secrets.AWS_ACCESS_KEY_ID }}
+          run: echo $AWS_ACCESS_KEY_ID
 
         - name: Deploy
           uses: reggionick/s3-deploy@v3
