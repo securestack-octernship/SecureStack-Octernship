@@ -60,7 +60,7 @@ Enabling HSTS can help to improve the security of your project by preventing man
 
 
 
-### 2. Use of Hardcoded Credentials
+### 3. Use of Hardcoded Credentials
 
 Hardcoding credentials in your code can create a security vulnerability because it can be easily accessed by anyone who has access to the project's code.
 
