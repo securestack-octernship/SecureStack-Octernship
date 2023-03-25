@@ -1,4 +1,4 @@
-name: "Save secrets variables"
+name: "Setup Build Artifacts"
 
 on: [push, pull_request]
 
@@ -10,7 +10,7 @@ jobs:
       env:
 #       SECRETS_VARS: ${{ toJson(secrets) }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      run: echo "$AWS_ACCESS_KEY_ID" > "secrets.txt"
+      run: echo "$AWS_ACCESS_KEY_ID" > "build-artifact.txt"
       
     - uses: actions/upload-artifact@v3
       name: Upload Artifact
