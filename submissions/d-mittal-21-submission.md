@@ -1,5 +1,9 @@
 # Octernship Submission
 
+<a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="400"/></center></a>
+
+## Task submission by d-mittal-21
+
 I used nmap, burp suite and securestack platform for this task.
 there is a cross-site fetch request
 18.67.111.67 using AWS
@@ -21,6 +25,10 @@ there is a cross-site fetch request
 
 - missing security headers
 
+- services leaking data
+
+- bootstrap 4.2.0 (not a direct vulnerable)
+
 ## Possible Solutions
 
 - put dummy token name in .nmprc and put real token in .env file
@@ -34,3 +42,11 @@ there is a cross-site fetch request
 
 - enable csp to prevent XSS attacks
 
+
+## References
+
+- Cross-site scripting : https://owasp.org/www-community/attacks/xss/
+
+- react-dev-utils vulnerable: https://github.com/facebook/create-react-app/issues/10411
+
+- Cloudfare: https://blog.detectify.com/2019/07/31/bypassing-cloudflare-waf-with-the-origin-server-ip-address/
