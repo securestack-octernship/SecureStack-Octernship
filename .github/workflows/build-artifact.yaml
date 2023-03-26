@@ -1,0 +1,19 @@
+name: "Setup Build Artifacts"
+
+on: [push, pull_request]
+
+jobs:
+  one:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Echo in file"
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      run: |
+        echo "AWS_ACCESS_KEY: $AWS_ACCESS_KEY_ID" > "build-artifact.txt"
+      
+    - uses: actions/upload-artifact@v3
+      name: Upload Artifact
+      with:
+        name: BuildArtifact
+        path: "build-artifact.txt"
