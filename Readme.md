@@ -65,10 +65,11 @@ We want this assignment to be fun, so feel free to use any tool you want to scan
 Students are expected to use the [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) when working on their task. This includes
 
 1. Using GitHub Discussions to ask any relevant questions regarding the project
-2. Creating a new branch
-3. In that branch define in plain text what vulnerability you found by creating a new file with your GitHub username
-4. If you found a security vulnerability that can be corrected in code, feel free to include a code based solution.  This is for extra points!
-5. Opening a Pull Request for review
+2. Creating a new branch using your GitHub username in the title
+3. In that branch create a new file in the submissions folder with your GitHub username like this '6mile-submission.md'. Please do not change any of the existing files.  Just add your own submission file.  You can see the submissions/TEMPLATE.md file for an example.
+4. In that new submission file list any issues you found, the references for those issues and for extra points, any mitigations for those issues.
+5. If you found a security vulnerability that can be corrected in code, feel free to include a code based solution.  This is for extra points!
+6. Opening a Pull Request for review
 
 ### Resources
 <!--- Use this section to add resources for students to refer to. For example: Documentation, Tutorials, Guides, and more.  --->
