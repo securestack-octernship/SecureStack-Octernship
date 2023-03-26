@@ -66,7 +66,7 @@ Students are expected to use the [GitHub Flow](https://docs.github.com/en/get-st
 
 1. Using GitHub Discussions to ask any relevant questions regarding the project
 2. Creating a new branch
-3. In that branch define in plain text what vulnerability you found
+3. In that branch define in plain text what vulnerability you found by creating a new file with your GitHub username
 4. If you found a security vulnerability that can be corrected in code, feel free to include a code based solution.  This is for extra points!
 5. Opening a Pull Request for review
 
