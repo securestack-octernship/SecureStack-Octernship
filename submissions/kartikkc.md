@@ -15,7 +15,7 @@ The password is exposed and hard-coded in App.js file.
          password="v6faF+gC7Zs@?VyCqtEYQ%?S"
 ```
 
-######Solution: 
+###### Solution: 
 The Credentials must not be exposed or hard-coded.  
 
 ##### 2. Open API Dumps user-data
@@ -36,20 +36,20 @@ and the password above mentioned to log-in and we can successfully login.
 From this,
 We can say that the api used in this webapp uses an open api which is not secure and dumps data to every request which is sent to fetch user-data.
 
-######Solution:
+###### Solution:
  More Secure api can be used to fetch the user data or OAuth which is more secure way to get the login details. Link of api must be stored in the .env file which must not be shared publically.
 
 
-#####4. SSRI
+##### 4. SSRI
 ssri is a Standard Subresource Integrity library -- parses, serializes, generates, and verifies integrity metadata according to the SRI spec. Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS). Malicious SRIs could take an extremely long time to process, leading to denial of service.
 
-#####5. HSTS header missing
+##### 5. HSTS header missing
 
 This will allow attackers to access the website over the HTTP which can allow them to open a variety of attacks like: MITM(man-in-the-middle) attack, Cookie hijacking and etc.
 
 
 
-#####6. Request
+##### 6. Request
 Request is a simplified http request client. Affected versions of this package are vulnerable to Server-side Request Forgery (SSRF) due to insufficient checks in the lib/redirect.js file by allowing insecure redirects in the default configuration, via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).
 
 
