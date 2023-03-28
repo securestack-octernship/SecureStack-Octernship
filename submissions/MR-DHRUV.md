@@ -9,7 +9,7 @@ Here are the issues I found in the "Find some bugs!" GitHub Classroom:
 
 1.  **Exposed Credientials to login to the application**
 
-    On carefully inspecting the source code in of the application, in the file   ```app.js``` the password is exposed.
+    On carefully inspecting the source code of the application, in the file   ```app.js``` the password is exposed.
     
     ```javascript
             const password="v6faF+gC7Zs@?VyCqtEYQ%?S"
