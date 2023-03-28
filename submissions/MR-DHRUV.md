@@ -16,9 +16,15 @@ Here are the issues I found in the "Find some bugs!" GitHub Classroom:
     ```         
 
     Now we are left with email feild. On inspecting the API `https://reqres.in` used for auth purpose, I found out that a GET request to url : ```/api/users?page=2``` reveals all the users with their information.
+    
     </n>
+    
     On using email : ```lindsay.ferguson@reqres.in``` and password as above mentioned, I was able to log into the application.
+    
+    ![Screenshot 2023-03-28 233430](https://user-images.githubusercontent.com/96336775/228333817-af7fcdb3-8da6-4bd3-b9f8-85e34975ec75.png)
+
     </n>
+    
     Further ```.npmrc``` auth token is also exposed.
 
     #### Solution 
@@ -28,6 +34,7 @@ Here are the issues I found in the "Find some bugs!" GitHub Classroom:
 <br>
 
 2. **Source map is exposed**
+
     In the inspect section of any browser, one can go to the debugger tab to view the complete source map of the react app.
 
     #### Solution 
@@ -38,11 +45,13 @@ Here are the issues I found in the "Find some bugs!" GitHub Classroom:
     <br>
 
 3. **ReDoS**
+
     In the file ```SignInForm.tsx``` a regex expression is used for validating emails which can cause a ReDoS attack.
     
     <br>
 
 4. **HSTS header is absent**
+
     Absence of this header allows the site to be accessed in the ```http``` mode making it unsecure.
 
 ### References
