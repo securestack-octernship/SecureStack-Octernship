@@ -4,12 +4,14 @@
 
 <a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="400"/></center></a>
 
-### Task submission by 6mile
+### Task submission by Urmi-Jana
 
 Here are the issues I found in the "Find some bugs!" GitHub Classroom:
 
-1. Cross site scripting in blah.js
-2. Javascript sandbox bypass in Vm2 library
+1. Exposed sensitive information (Password, AuthToken, AWS Key, Admin mail and password)
+2. Open API that is not secure
+3. HSTS header missing
+4. CSP not available 
 
 ### References
 - Cross site scripting reference: https://owasp.org/www-community/attacks/xss/
