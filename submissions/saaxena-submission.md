@@ -65,4 +65,11 @@ to solve this issue in  the .htaccess file we have to write the following  code 
 #"MISSING REFER POLICY" -
 
 There are various ways to solve this -
-// In a response header: Referrer-Policy: no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading In a META tag In an element attribute or, //
+n a response header:
+Referrer-Policy: no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading 
+In a META tag
+<meta name="Referrer-Policy" value="no-referrer | same-origin"/>
+In an element attribute
+<a href="https://app.cheapcryptobank.com" rel="noreferrer"></a> 
+or
+<a href="https://app.cheapcryptobank.com" referrerpolicy="no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading"></a>
