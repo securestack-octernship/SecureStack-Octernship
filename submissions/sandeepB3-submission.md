@@ -16,13 +16,13 @@ https://github.com/SecureStackCo/app.cheapcryptobank.com
 (These are the bugs and vulnerabilities I have found by thoroughly going through the code base)
 
 ### 1. Missing public directory and index.html - Bug
-ss1
+<img width="714" alt="ss1" src="https://user-images.githubusercontent.com/107111616/229319436-8a384de7-374e-4499-a5ec-be9d08cf3ff2.png">
 
 **Solution:**
 - Create the public directory with index.html file in it.
 - Create a div element inside the body tag and assign id="root"
+<img width="990" alt="ss2" src="https://user-images.githubusercontent.com/107111616/229319463-eca68603-a162-4370-84e6-6591289d31bc.png">
 
-ss2
 
 ### 2. Latest dependency installations - Bug
 **React app requires node module installation, updating react-scripts to the latest version, and installing web-vitals package.**
@@ -36,8 +36,8 @@ ss2
 ```
 
 **Working React App at localhost:3000**
+<img width="1111" alt="ss3" src="https://user-images.githubusercontent.com/107111616/229319467-cdf75c71-911f-4943-98c0-f72a34a99cff.png">
 
-ss3
 
 ### 3. Source Code - Bugs/Vulnerabilities 
 - **Non-Validated attribute in Form**
@@ -73,9 +73,10 @@ Similar to the above solutions set environment variables to store the authentica
 ---
 **Create the ```.env``` file and do the needful. Also create the ```.gitignore``` file and store .env along with all the other files which when exposed can be critical to security.**
 
-ss4
+<img width="507" alt="ss4" src="https://user-images.githubusercontent.com/107111616/229319472-930d7db0-4dc1-4734-9ea9-0436e736dcbc.png">
 
-ss5
+<img width="859" alt="ss5" src="https://user-images.githubusercontent.com/107111616/229319478-2c8d38ec-0ba8-41c2-bebf-a97482710df9.png">
+
 
 ### Additional Bugs & Vulnerabilities found using SecureStack
 ```http
