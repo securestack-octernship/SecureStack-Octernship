@@ -72,4 +72,5 @@ In a META tag
 In an element attribute
 <a href="https://app.cheapcryptobank.com" rel="noreferrer"></a> 
 or
-<a href="https://app.cheapcryptobank.com" referrerpolicy="no-referrer | same-origin | origin | strict-origin | no-origin-when-downgrading"></a>
+<a href="https://app.cheapcryptobank.com" referrerpolicy="no-referrer |
+same-origin | origin | strict-origin | no-origin-when-downgrading"></a>
