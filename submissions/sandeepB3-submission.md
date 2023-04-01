@@ -124,12 +124,6 @@ Add this snippet of code in our main index.html file
 <meta name="Referrer-Policy" value="no-referrer | same-origin"/>
 ```
 
-## References
-- **HTTP Strict-Transport-Security (HSTS)** - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
-- **Content Security Policy (CSP)** - https://owasp.org/www-project-secure-headers/#content-security-policy-csp
-- **Security txt File** - https://securitytxt.org/
-- **Refer Policy** - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
-
 ## Conclusion
 Studying the codebase thoroughly as well as using SecureStack I was able to understand and recognise the Bugs & Vulnerabilities involved in the app. 
 
@@ -154,3 +148,9 @@ Discovered 72 vulnerabilities within the source code of a web application using 
 
 ---
 **Web application vulnerabilities can arise from a variety of factors, including inadequate adherence to best practices during development and deployment, as well as human errors. Most important thing is to always secure vulnerable keys and prevent unauthorized access.**
+
+## References
+- **HTTP Strict-Transport-Security (HSTS)** - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+- **Content Security Policy (CSP)** - https://owasp.org/www-project-secure-headers/#content-security-policy-csp
+- **Security txt File** - https://securitytxt.org/
+- **Refer Policy** - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
