@@ -12,8 +12,7 @@ In this intern role, you will be working with a highly performant team who are a
 
 ### Octernship role description
 <!--- Use this section to describe the role in as much detail as necessary. Please include the GitHub Classroom assignment submission date, length of the Octernship, and the monthly stipend --->
-We're looking for a full-stack developer to join the npm CLI team. This team is responsible for the open source tools that empower the JavaScript ecosystem to create, distribute & consume packages.
-SecureStack is looking for a passionate intern who wants to learn about application security and DevSecOps while help build a truly innovative product.  The important part of this is that the successful intern will have a passion for learning and some experience in one or more of these things:
+We're looking for a full-stack developer to join the SecureStack team. This team is responsible developing the SecureStack platform and introducing new features.  SecureStack is looking for a passionate intern who wants to learn about application security and DevSecOps while help build a truly innovative product.  The important part of this is that the successful intern will have a passion for learning and some experience in one or more of these things:
 1. Javascript & React
 2. Frontend design
 3. Tailwind CSS
