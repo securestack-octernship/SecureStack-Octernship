@@ -75,7 +75,7 @@ or
 <a href="https://app.cheapcryptobank.com" referrerpolicy="no-referrer |
 same-origin | origin | strict-origin | no-origin-when-downgrading"></a>
 
-#REFRENCES
+#REFERENCES
 
 Server Side Request forgery: https://owasp.org/www-community/attacks/Server_Side_Request_Forgery
 
