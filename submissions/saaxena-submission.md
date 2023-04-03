@@ -74,3 +74,11 @@ In an element attribute
 or
 <a href="https://app.cheapcryptobank.com" referrerpolicy="no-referrer |
 same-origin | origin | strict-origin | no-origin-when-downgrading"></a>
+
+#REFRENCES
+
+Server Side Request forgery: https://owasp.org/www-community/attacks/Server_Side_Request_Forgery
+
+- ReDOS reference: https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS
+
+- HSTS Header : https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
